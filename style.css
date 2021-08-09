@@ -12,13 +12,18 @@ html {
 .calculator {
   border: 1px solid #ccc;
   border-radius: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
+  position: relative;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
-
+@media screen and (min-width: 768px) {
+    .calculator {
+      width: 50%;
+      margin-top: 50px;
+    }
+}
 .calculator-screen {
   width: 100%;
   font-size: 5rem;
